@@ -12,8 +12,7 @@
 <body class="h-full grid place-items-center">
     <div id="app">
 
-        <app-button>Submit</app-button>
-        <app-button>Click Me</app-button>
+
 
     </div>
 
@@ -23,21 +22,10 @@
 
             components: {
                 'app-button': {
-
-                    template: `
-                        <button class="bg-gray-200 hover:bg-gray-400 border rounded px-5 py-2 disabled:cursor-not-allowed" :disabled="processing">
-                            <slot />
-                        </button>
-                    `,
-
-                    data() {
-                        return {
-                            processing: true
-                        }
+                    mounted(){
+                        alert("X");
                     }
                 },
-
-
             }
 
         };
